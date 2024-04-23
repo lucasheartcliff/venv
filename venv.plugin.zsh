@@ -6,7 +6,7 @@ load-venv() {
   local venv_path="$(pwd)/venv/bin/activate"
 
   if [ -f "$venv_path" ]; then
-    source venv_path
+    source $venv_path
   fi
 }
 add-zsh-hook chpwd load-nvmrc
